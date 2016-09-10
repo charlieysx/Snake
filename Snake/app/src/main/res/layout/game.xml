@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.elims.snake.view.SnakeView
+        android:id="@+id/sv_game"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/tv_len"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:background="#11222222"
+        android:textColor="#0000ff"/>
+
+    <TextView
+        android:id="@+id/tv_rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:background="#66666666"
+        android:textColor="#ff0000"
+        android:layout_alignParentRight="true"/>
+
+    <RelativeLayout
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="35dp"
+        android:layout_gravity="left|bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    <ImageView
+        android:id="@+id/iv_move"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@mipmap/button"/>
+
+    <ImageView
+        android:id="@+id/iv_moving"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@mipmap/button"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="35dp"
+        android:layout_gravity="right|bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <ImageView
+            android:id="@+id/iv_speed"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/button"/>
+
+        <ImageView
+            android:id="@+id/iv_speeding"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="25dp"
+            android:src="@mipmap/button"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
